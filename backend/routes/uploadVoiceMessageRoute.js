@@ -5,8 +5,8 @@ const multer = require('multer');
 const messageModel = require("../models/messageModel");
 
 AWS.config.update({
-    accessKeyId: 'AKIA4R2VT72G5ZS5D7R2',
-    secretAccessKey: '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',
+    accessKeyId: process.env.AWS_KEY,
+    secretAccessKey: process.env.AWS_VALUE,
     region: 'us-west-2'
 });
 
